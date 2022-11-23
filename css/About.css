@@ -1,0 +1,167 @@
+* {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+blockquote a {
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    width: 95%;
+    min-width: 640px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+body > header > img {
+    display: block;
+    width: 100%;
+}
+
+body > header {
+    height: 50%;
+}
+
+div {
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+@font-face {
+    font-family: Pricedown;
+    src: url(pricedown_bl.otf);
+}
+
+h1 {
+    font-size: 3.5em;
+    line-height: 2.5em;
+    font-family: Pricedown;
+}
+
+body > header nav li{
+    width: 10%;
+    background-color: black;
+}
+
+header > nav a {
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+
+nav.upper-menu li{
+    display: block;
+    float: left;
+}
+
+body {
+    background-color: ghostwhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body > main {
+    display: block;
+    clear: left;
+    margin-top: 25px;
+}
+
+main > nav.lower-menu {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-right: 5px;
+}
+
+main > nav h2 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+main > nav.lower-menu li {
+    padding-top: 10px;
+}
+
+main > nav.lower-menu li a {
+    color: rgb(129, 129, 129);
+}
+
+main > article {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-right: 25px;
+}
+
+body article img {
+    float: right;
+    width: 40%;
+    margin: 0px 0 10px 10px;
+}
+
+p {
+    display: block;
+}
+
+main > aside a{
+    text-decoration: none;
+    color: rgb(80, 65, 2);
+}
+
+aside a h4 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: rgb(109, 109, 109);
+}
+
+body > footer > div {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+    line-height: 1.2em;
+    padding: 10px;
+    background-color: black;
+    color: ghostwhite;
+}
+
+footer div nav ul li a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+footer div a {
+    text-decoration: none;
+    color: ghostwhite;
+}
