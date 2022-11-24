@@ -6,25 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Home.css" >
     <link rel="stylesheet" href="css/Animate.css" >
+    <script src="https://kit.fontawesome.com/51c4c3671d.js" crossorigin="anonymous"></script>
     <title>Website-project</title>
 </head>
 <body>
     <section class="header">
         <nav>
             <h1><a href="Home.html">VGology</a></h1>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" on click="hideMenu()"></i>
                 <ul>
                     <li><a href="Home.html">HOME</a></li>
                     <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="News.html">NEWS</a></li>
                     <li><a href="Latest.html">LATEST</a></li>
                     <li><a href="Contact.html">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" on click="showMenu()"></i>
         </nav>
 
+    <div class="text-box">
+        <h2>Video Game Culture</h2>
+        <p>The place to be for the latest video game news and needs!</p>
+        <a href="Latest.html" class="hero-btn"><b>Learn More</b></a>
+    </div>
 
 
     </section>
+
+    <footer>
+        <div>
+            <h3>Contact Information</h3>
+            <address>
+                Written by <a href="john.bayog@my.marianas.edu.com">John Teo Bayog</a><br>
+                Phone <a href="tel:6702857111">(670)285-7110</a>
+            </address>
+            <address>
+                PO Box 8166 SVRB, As Terlaje,<br>
+                Saipan, MP 96950
+            </address>
+        </div>
+        <div>
+            <h3>Sites</h3>
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Latest.html">Latest</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h3>Meta</h3>
+            <a href="a">Login</a>
+        </div>
+        <div>
+            <h3>Careers</h3>
+            <a href="a">Latest Job Openings</a>
+        </div>
+    </footer>
+
+
+    <!------Toggle Menu (may not work)------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
 
     <div class='light x1'></div>
     <div class='light x2'></div>
