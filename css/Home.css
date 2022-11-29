@@ -130,7 +130,7 @@ nav .fa-solid{
     }
     nav .fa-solid {
         display: block;
-        color: black;
+        color: ghostwhite;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -140,30 +140,3 @@ nav .fa-solid{
     }
 }
 
-.Information {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-body > footer > div {
-    display: block;
-    float: left;
-    width: 30%;
-    height: 100%;
-    line-height: 1.2em;
-    padding: 10px;
-    background-color: black;
-    color: ghostwhite;
-}
-
-footer div nav ul li a {
-    text-decoration: none;
-    color: ghostwhite;
-}
-
-footer div a {
-    text-decoration: none;
-    color: ghostwhite;
-}

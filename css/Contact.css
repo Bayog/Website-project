@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 120vh;
+    width: 100%;
+    background-size: cover;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: ghostwhite;
+}
+
+@font-face {
+    font-family: Pricedown;
+    src: url(font/pricedown_bl.otf);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: Pricedown;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: goldenrod;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.text-box li i {
+    display: inline-block;
+    width: 5%;
+}
+
+.text-box li span {
+    display: inline-block;
+}
+
+.text-box h2 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid goldenrod;
+    background: goldenrod;
+    transition: 1s;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.social {
+	margin: 20px 40px;
+}
+.social i {
+	color: rgb(241, 193, 72);
+	font-size: 30px;
+	padding: 10px 10px;
+}
+.social i:hover {
+	color:#3d3d3d;
+}
+
+.social {
+	text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: auto;
+    border: 4px solid black;
+}
+
+.center {
+    color: black;
+    background-color: #a6f9eb;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 700px) {
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #46897d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: ghostwhite;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}

@@ -1,8 +1,26 @@
 * {
-    font-size: 100%;
     margin: 0;
     padding: 0;
-    vertical-align: baseline;
+}
+
+.header {
+    min-height: 70vh;
+    width: 100%;
+    background-size: cover;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: ghostwhite;
+}
+
+@font-face {
+    font-family: Pricedown;
+    src: url(font/pricedown_bl.otf);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: Pricedown;
 }
 
 nav {
@@ -12,156 +30,140 @@ nav {
     align-items: center;
 }
 
-nav ul {
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
     list-style: none;
-    list-style-image: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
 }
 
-nav a {
+.nav-links ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 a {
+    color: ghostwhite;
     text-decoration: none;
 }
 
-blockquote a {
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: goldenrod;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h2 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.hero-btn {
+    display: inline-block;
     text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
 }
 
-html {
-    height: 100%;
+.hero-btn:hover {
+    border: 1px solid goldenrod;
+    background: goldenrod;
+    transition: 1s;
 }
 
-body {
-    line-height: 1;
-    width: 95%;
-    min-width: 640px;
-    max-width: 940px;
+nav .fa-solid {
+    display: none;
+}
+
+.social {
+	margin: 20px 40px;
+}
+.social i {
+	color: rgb(241, 193, 72);
+	font-size: 30px;
+	padding: 10px 10px;
+}
+.social i:hover {
+	color:#3d3d3d;
+}
+
+.social {
+	text-align: center;
+}
+
+table, th, td {
+    min-height: 20vh;
+    border:1px solid black;
+}
+
+.center {
+    color: black;
+    background-color: #a6f9eb;
     margin-left: auto;
     margin-right: auto;
-    min-height: 100%;
 }
 
-body > header > img {
-    display: block;
-    width: 100%;
-}
-
-body > header {
-    height: 50%;
-}
-
-div {
-    height: 40px;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-h3 {
-    font-size: 1.4em;
-    line-height: 2em;
-}
-
-@font-face {
-    font-family: Pricedown;
-    src: url(pricedown_bl.otf);
-}
-
-h1 {
-    font-size: 3.5em;
-    line-height: 2.5em;
-    font-family: Pricedown;
-}
-
-body > header nav li{
-    width: 10%;
-    background-color: black;
-}
-
-header > nav a {
-    width: 100%;
-    color: white;
-    padding: 5px;
-}
-
-nav.upper-menu li{
-    display: block;
-    float: left;
-}
-
-body {
-    background-color: ghostwhite;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body > main {
-    display: block;
-    clear: left;
-    margin-top: 25px;
-}
-
-main > nav.lower-menu {
-    display: block;
-    float: left;
-    width: 20%;
-    margin-right: 5px;
-}
-
-main > nav h2 {
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-
-main > nav.lower-menu li {
-    padding-top: 10px;
-}
-
-main > nav.lower-menu li a {
-    color: rgb(129, 129, 129);
-}
-
-main > article {
-    display: block;
-    float: left;
-    width: 50%;
-    margin-right: 25px;
-}
-
-body article img {
-    float: right;
-    width: 40%;
-    margin: 0px 0 10px 10px;
-}
-
-p {
-    display: block;
-}
-
-main > aside a{
-    text-decoration: none;
-    color: rgb(80, 65, 2);
-}
-
-aside a h4 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    color: rgb(109, 109, 109);
-}
-
-body > footer > div {
-    display: block;
-    float: left;
-    width: 30%;
-    height: 100%;
-    line-height: 1.2em;
-    padding: 10px;
-    background-color: black;
-    color: ghostwhite;
-}
-
-footer div nav ul li a {
-    text-decoration: none;
-    color: ghostwhite;
-}
-
-footer div a {
-    text-decoration: none;
-    color: ghostwhite;
+@media(max-width: 700px) {
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #46897d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: ghostwhite;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
 }

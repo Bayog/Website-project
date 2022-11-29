@@ -5,98 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/About.css">
     <link rel="stylesheet" href="css/Animate.css">
-    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobo.css">
+    <script src="js/bar.js" defer></script>
+    <script src="https://kit.fontawesome.com/51c4c3671d.js" crossorigin="anonymous"></script>
     <title>Website-project</title>
 
 <body>
-    <header>
-        <h1>VGology</h1>
-        <nav class="upper-menu">
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Latest.html">Latest</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <nav class="lower-menu">
-            <h2>(placeholder)</h2>
-            <ul>
-                <li><a href="#">wfwf</a></li>
-                <li><a href="#">ewew</a></li>
-                <li><a href="#">eqeq</a></li>
-                <li><a href="#">sdwe</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h2>Latest News</h2>
-            <img src="" alt="News Update">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-        </article>
-        <aside>
-            <h3>Recent Articles</h3>
-            <blockquote>
-                <a href="a">
-                    <h4>Something Something</h4>
-                    <p>bbwfinubewvohhhhhhhhhhhhhhrhirwincjieowjrfhw9mehyfbhwebf</p>
-                </a>
-            </blockquote>
-            <blockquote>
-                <a href="a">
-                    <h4>Something Something</h4>
-                    <p>bbwfinubewvohhhhhhhhhhhhhhrhirwincjieowjrfhw9mehyfbhwebf</p>
-                </a>
-            </blockquote>
-            <blockquote>
-                <a href="a">
-                    <h4>Something Something</h4>
-                    <p>bbwfinubewvohhhhhhhhhhhhhhrhirwincjieowjrfhw9mehyfbhwebf</p>
-                </a>
-            </blockquote>
-        </aside>
-    </main>
-    <footer>
-        <div>
-            <h2>Contact Information</h2>
-            <address>
-                Written by <a href="john.bayog@my.marianas.edu.com">John Teo Bayog</a><br>
-                Phone <a href="tel:6702857111">(670)285-7110</a>
-            </address>
-            <address>
-                PO Box 8166 SVRB, As Terlaje,<br>
-                Saipan, MP 96950
-            </address>
-        </div>
-        <div>
-            <h2>Sites</h2>
-            <nav class="footer-menu">
+    <section class="header">
+        <nav id="navbar">
+            <h1><a href="Home.html">VGology</a></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" on click="hideMenu()"></i>
                 <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Latest.html">Latest</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="Latest.html">LATEST</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div>
-            <h2>Meta</h2>
-            <a href="a">Login</a>
-        </div>
-        <div>
-            <h2>Careers</h2>
-            <a href="a">Latest Job Openings</a>
+            </div>
+            <i class="fa-solid fa-bars" on click="showMenu()"></i>
+    </section>
+    </nav>
+
+    <div class="text-box">
+        <h2>About Me</h2>
+        <p>My Name is John Teo Bayog and I am a current college student of Northern Marianas College. This is my first
+            website project and is meant to be similar to other news websites in the web like IGN or Kotaku. I have a
+            passion for technology and love learning about it. Although I procrastinate a lot, I tend to work too hard
+            on stuff like homework and sometimes forget to eat lunch or dinner because I'm too busy focusing.
+        </p>
+
+    </div>
+
+        <table style="width:70%" class="center">
+            <tr>
+              <th>Education</th>
+              <th>Phone</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>Northern Marianas College</td>
+              <td>(670) 285-7110</td>
+              <td>johnteobayog@gmail.com</td>
+            </tr>
+            <tr>
+              <td>AAS in Business Administration</td>
+              <td>(670) 285-6794</td>
+              <td>john.bayog@my.marianas.edu</td>
+            </tr>
+        </table>
+          
+
+    <div class="social">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=3s"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+
+    <!------Footer------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-cs">
+                    <h4>Information</h4>
+                    <ul>
+                        <li>
+                            <address>john.bayog@my.marianas.edu</address>
+                        </li>
+                        <li>Phone: (670) 285-7110</li>
+                        <li>
+                            <address>PO Box 8166 SVRB, As Terlaje,<br>Saipan, MP 96950</address>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-cs">
+                    <h4>Sites</h4>
+                    <ul>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Latest.html">Latest</a></li>
+                        <li><a href="News.html">News</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cs">
+                    <h4>Other Sites</h4>
+                    <div class="site-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=3s"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.twitch.tv/"><i class="fa-brands fa-twitch"></i></a>
+                        <a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -113,7 +123,7 @@
     <div class='light x7'></div>
     <div class='light x8'></div>
     <div class='light x9'></div>
-    
+
 
 
 </body>
